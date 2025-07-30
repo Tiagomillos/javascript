@@ -16,10 +16,10 @@
             color: #e5ff00;
         }
         div {
-            background-color: #0b4e7a;
-            color: white;
+            background-color: #fffb00;
+            color: rgb(0, 0, 0);
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 10px;
             
         }
     </style>
@@ -29,10 +29,19 @@
     <P>Aqui vai um resultado</P>                                     
     <p>Aprendendo a usar o <strong>DOM </strong>em JavaScript</p>
 
-    <div>Clique em mim</div>
+    <div class="msg">Clique em mim</div>
 
     <script>
-
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p') [1]
+       /* var d = window.document.getElementById('msg')
+        d.style.color =  'yellow'
+        d.innerText = 'Estou mudando o texto do elemento'
+        */
+       var d = window.document.querySelector('div.msg')
+       d.style.background = 'red'
+       d.style.color = 'white'
+        
     </script>
     
 </body>
