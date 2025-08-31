@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(to right, #03223d,#074158,#033023  );
+   
+    
+    font: normal 16px Arial, sans-serif;
+
+
+}
+
+
+header {
+    color: beige;
+    text-align: center;
+    
+    
+
+}
+
+
+section {
+    background-color: wheat;
+    border-radius: 15px;
+    padding:  15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.644);
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: beige;
+    text-align: center;
+    font-style: italic;
+
+}
+
+div {
+    text-align: center;
+    padding: 4px;
+    margin-top: 5px;
+}
