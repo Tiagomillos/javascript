@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas Smartphone</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #00012c;
+            color: #ece9e0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #00ffea;
+        }
+        input[type="text"] {
+            background: #163027;
+            color: white;
+            padding: 15px;
+            margin: 15px 5;
+            width: 290px;
+            font-size: 1em;
+
+        }
+
+        input[type="button"] {
+            padding: 15px 10px;
+            margin: 10px;
+            background-color: #163027;
+            color: #f1f1f1;;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Países</h1>
+    <input type="text" id="pais" placeholder="Digite o País em que você mora">
+    <button onclick="verificarpais()">Verificar</button>
+    <div id="resultado">
+       
+    </div>  
+
+
+    <script>
+        function verificarpais() {
+             var pais = document.getElementById('pais').value.toUpperCase()
+            
+             var res = document.getElementById('resultado')
+            
+             res.innerHTML = `Você mora em <strong>${pais.toUpperCase()}</strong>.<br>`
+           
+           
+            if (pais === 'BRASIL') {
+                res.innerHTML += `Você é Brasileiro(a).`
+            } else  { 
+                res.innerHTML += `Você é Estrangeiro(a).`
+
+        }  
+    }
+    </script>
+    
+</body>
+</html>
